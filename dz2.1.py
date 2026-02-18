@@ -1,1 +1,5 @@
-print('my namew')
+n = int(input('Введіть число:'))
+print('Квадрат числа =', n * n)
+
+
+10
