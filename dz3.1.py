@@ -3,12 +3,14 @@ y = int(input('Введіть друге число:'))
 z = input('Введіть дію над числами(+, -, *, /):')
 if z == "+":
     print(x + y)
-if z == "-":
-    print(x + y)
-if z == "*":
+elif z == "-":
+    print(x - y)
+elif z == "*":
     print(x * y)
-if z == "/":
+elif z == "/":
     if y == 0:
         print('Ділення на 0 неможливе')
     else:
         print(x / y)
+else:
+    print('Невірна дія')
