@@ -1,5 +1,4 @@
 import random
-from typing import final
 
 lst = random.randint(3,10)
 num = []
