@@ -15,6 +15,6 @@ if 0 <= seconds_in < 8640000:
         word = "дні"
     else:
         word = "днів"
-    print(f"{days}{word}, {h}:{m}:{s}")
+    print(f"{days} {word}, {h}:{m}:{s}")
 else:
     print("Помилка! Число повинно бути від 0 до 8639999")
