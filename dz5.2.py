@@ -15,7 +15,7 @@ while True:
             print(x / y)
     else:
         print('Невірна дія')
-    answer = input("Продовжити роботу? (y/n):")
+    answer = input("Продовжити роботу? (y/n):").lower()
 
     if answer != "y":
         print("Роботу завершено")
