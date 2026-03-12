@@ -1,7 +1,7 @@
 def add_one(some_list):
     number = "".join(str(digit) for digit in some_list)
-    result = int(number) + 1
-    return [int(digit) for digit in str(result)]
+    res = int(number) + 1
+    return [int(digit) for digit in str(res)]
 
 assert add_one([1, 2, 3, 4]) == [1, 2, 3, 5], 'Test1'
 assert add_one([9, 9, 9]) == [1, 0, 0, 0], 'Test2'
