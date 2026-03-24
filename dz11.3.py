@@ -1,6 +1,5 @@
 def is_even(number):
-    last_digit = str(number)[-1]
-    return last_digit in "02648"
+    return str(number)[-1] in "02648"
 
 assert is_even(2494563894038**2) == True, 'Test1'
 assert is_even(1056897**2) == False, 'Test2'
