@@ -69,18 +69,14 @@ assert gr.find_student('Jobs2') is None, 'Test2'
 assert isinstance(gr.find_student('Jobs'), Student) is True, 'Метод пошуку повинен повертати екземпляр'
 
 gr.delete_student('Taylor')
-print(gr)  # Only one student
+print(gr)
 
 gr.delete_student('Taylor')  # No error!
-
-# --- Тест на перевищення ліміту групи ---
-# У групі вже є 1 студент (Jobs), тому додаємо ще 9, щоб досягти ліміту в 10
 for i in range(9):
     gr.add_student(Student('Male', 20 + i, f'Name{i}', f'LastName{i}', f'AN{200 + i}'))
 
 assert len(gr.group) == 10, 'Test3: у групі має бути рівно 10 студентів'
 
-# Спроба додати 11-го студента має викликати GroupOverflowError
 extra_student = Student('Female', 22, 'Extra', 'Student', 'AN999')
 exception_caught = False
 try:
